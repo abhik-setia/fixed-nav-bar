@@ -4,6 +4,14 @@
 		<title>FIXED NAV_BAR</title>
 		<link rel="stylesheet" type="text/css" href="navbar.css">
 		<link rel="stylesheet" type="text/css" href="dropdown.css">
+		<script src="jquery-1.11.3.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#login-trigger").click(function(){
+					$("#login-content").slideToggle(1000);
+				});
+			});
+		</script>
 	</head>
 	<body>
 		<div id="nav">
@@ -18,12 +26,16 @@
 						<div id="login1">
 						<li id="signup"><a href="#" >SIGN-UP</a></li>
 						<li id="login">
-						<a href="#" id="login-trigger">LOGIN <span>▼</span></a>
+						<a href="#" id="login-trigger">LOGIN <span>&#x21ba;</span></a>
 							<div id="login-content">
 							<form>
 								<fieldset id="input">
 									<input id="username" type="Email" placeholder="Your email address" required>
 									<input id="password" type="password" name="Password" placeholder="Password" required>
+								</fieldset>
+								<fieldset id="actions">
+									<input type="submit" id="submit" value="Log in">
+									<label><input type="checkbox" checked="checked"> Keep me signed in</label>
 								</fieldset>
 							</form>
 							</div>
