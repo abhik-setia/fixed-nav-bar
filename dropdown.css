@@ -32,3 +32,21 @@ An element with greater stack order is always in front of an
   box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
   border-radius: 3px 0 3px 3px;
 }
+#inputs input {
+  background: #f1f1f1;
+  padding: 6px 5px;
+  margin: 0 0 5px 0;
+  width: 238px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px #ccc inset;
+}
+#inputs input:focus {
+  background-color: #fff;
+  border-color: #e8c291;
+  outline: none;
+  box-shadow: 0 0 0 1px #e8c291 inset;
+}
+/* INPUT FOCUS :The :focus selector is used to select the element that has focus.
+Tip: The :focus selector is allowed on elements that accept keyboard
+ events or other user inputs.*/
