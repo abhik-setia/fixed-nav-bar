@@ -1,7 +1,4 @@
-#login1{
-border-right:1px solid #ddd;
 
-}
 #login-trigger,
 #signup a {
   padding: 15px 8px;
@@ -25,14 +22,22 @@ z-index: 999;
 /*The z-index property specifies the stack order of an element.
 An element with greater stack order is always in front of an
  element with a lower stack order.*/   
-  background-color:#FFFAF0;
+  background-color:black;
   background-image: linear-gradient(top, #fff, #eee);  
-  padding: 30px;
+  padding: 15px;
   box-shadow: 3px 5px 5px 10px #696969;
   border: 3px solid grey;
   border-radius: 3px 3px 3px 3px;
+  margin:0px;
 }
-#input input {
+#input,#actions{
+background-color:white;
+opacity:1;
+padding:15px;
+margin:0px;
+border-radius:5px 5px;
+}
+#input input{
   background: #f1f1f1;
   padding: 6px 5px;
   margin: 0 0 5px 0;
@@ -42,7 +47,7 @@ An element with greater stack order is always in front of an
   box-shadow: 0 1px 1px #ccc inset;
 }
 #input input:focus {
-  background-color: red;
+  background-color: yellowgreen;
   border-color: #e8c291;
   outline: none;
   box-shadow: 0 0 0 1px #e8c291 inset;
@@ -52,4 +57,9 @@ An element with greater stack order is always in front of an
 Tip: The :focus selector is allowed on elements that accept keyboard
  events or other user inputs.*/
  #submit{
- background-color:yellow;}
+ background-color:#C13030;
+ padding:10px;
+ border-radius:10px;
+ font-family:Arial Black, Gadget, sans-serif;
+ font-size:20px;
+ font-weight: bold;}
