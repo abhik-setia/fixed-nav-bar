@@ -1,0 +1,24 @@
+#slider{
+z-index:999;
+overflow:hidden;
+height:400px;
+width:720px;
+position:absolute;
+top:50px;
+bottom:0;
+left:10px;
+right:0;
+}
+#slider .slides{
+	display:block;
+	width:6000px;
+	height:400px;
+
+	}
+#slider .slide{
+	float:left;
+	list-style-type:none;
+	width:720px;
+	height:400px;
+	
+	}
