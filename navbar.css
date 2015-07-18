@@ -97,19 +97,20 @@ box-shadow: 10px 10px 15px #888888;
  .innerclass{
  height:auto;
  width:auto;
- background-color:yellow;
+ background-color:#E8E8E8 ;
  margin:20px;
- border:3px solid black;
+ border:2px dashed grey;
 }
  
  #innercontent{
- background-color:red;
+ background-color:white;
  height:400px;
  width:400px;
- border:5px solid black;
+ border:none;
  display:inline-block;
  margin:8px;
- margin-left:18px;}
+ margin-left:18px;
+ box-shadow:10px 10px 15px #888888;}
  
  #innercircle{
  height:150px;
@@ -118,5 +119,36 @@ box-shadow: 10px 10px 15px #888888;
  border:3px solid black;
  margin-top:40px;
  border-radius:100%;
- background-color:blue;
- z-index:2000;}
+ z-index:2000;
+background-color: red;
+}
+
+#innercircle  {
+	-moz-animation-name: spin;
+    -moz-animation-duration: 400ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+	-webkit-animation-name: spin;
+    -webkit-animation-duration: 4000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 4000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    -o-transition: rotate(3600deg);}
+ 
+ @-moz-keyframes spin {
+    from { -moz-transform: rotateY(0deg);
+			-moz-transform:background-color:blue;}
+    to { -moz-transform: rotateY(360deg);
+			-moz-transform:background-color:black; }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotateY(0deg); }
+    to { -webkit-transform: rotateY(360deg); }
+}
+@keyframes spin {
+    from {transform:rotateY(0deg);}
+    to {transform:rotateY(360deg);}
+}
